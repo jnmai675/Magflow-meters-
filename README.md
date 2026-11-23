@@ -1,1 +1,243 @@
-# Magflow-meters-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WATERFLUX 3070 Assessment</title>
+    <style>
+        * { box-sizing: border-box; -webkit-text-size-adjust: 100%; }
+        body { font-family: -apple-system, Arial, sans-serif; margin: 0; padding: 12px; background: #f5f5f5; font-size: 16px; }
+        h1 { font-size: 1.25em; color: #333; border-bottom: 3px solid #0066cc; padding-bottom: 8px; }
+        h2 { font-size: 1.05em; color: #0066cc; margin: 0 0 12px 0; border-left: 4px solid #0066cc; padding-left: 8px; }
+        .form-group { background: #fff; padding: 14px; border-radius: 8px; margin-bottom: 14px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+        label { display: block; font-weight: bold; margin-top: 14px; color: #444; font-size: 0.95em; }
+        input[type="text"], input[type="date"], select, textarea {
+            width: 100%; padding: 12px; margin-top: 5px; border: 1px solid #ccc; border-radius: 6px;
+            font-size: 16px;
+        }
+        textarea { resize: vertical; }
+        .checklist-item { margin: 12px 0; padding: 10px; background: #fafafa; border-radius: 6px; }
+        .check-row { display: flex; align-items: flex-start; gap: 10px; }
+        .check-row input[type="checkbox"] { width: 24px; height: 24px; margin-top: 2px; flex-shrink: 0; }
+        .check-row span { font-size: 0.95em; line-height: 1.35; }
+        .remarks { width: 100%; margin-top: 8px; padding: 10px; border: 1px solid #ccc; border-radius: 6px; font-size: 15px; }
+        .checklist-item.critical { background: #fff3cd; border-left: 4px solid #ff9800; }
+        button { width: 100%; background: #0066cc; color: white; padding: 16px; border: none; border-radius: 8px; font-size: 1.1em; cursor: pointer; margin-top: 16px; }
+        button:active { background: #0052a3; }
+        .required { color: red; }
+        .note { font-size: 0.85em; color: #666; margin-top: 6px; }
+    </style>
+</head>
+<body>
+
+    <h1>🔧 WATERFLUX 3070 Assessment</h1>
+
+    <form action="https://formsubmit.co/JMaiasa@waterpng.com.pg" method="POST">
+        <input type="hidden" name="_subject" value="WATERFLUX 3070 Assessment Report">
+        <input type="hidden" name="_template" value="table">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="text" name="_honey" style="display:none">
+
+        <!-- Site Details -->
+        <div class="form-group">
+            <h2>📋 Site Details</h2>
+            <label>Location / DMA Zone <span class="required">*</span></label>
+            <input type="text" name="Location" required>
+
+            <label>Meter Serial Number <span class="required">*</span></label>
+            <input type="text" name="Serial_Number" required>
+
+            <label>Tag / Asset ID</label>
+            <input type="text" name="Asset_ID">
+
+            <label>Assessment Date <span class="required">*</span></label>
+            <input type="date" name="Assessment_Date" required>
+
+            <label>Assessor Name <span class="required">*</span></label>
+            <input type="text" name="Assessor" required>
+        </div>
+
+        <!-- Section 1 -->
+        <div class="form-group">
+            <h2>1. Site & Installation</h2>
+
+            <div class="checklist-item">
+                <div class="check-row">
+                    <input type="checkbox" name="Chamber_Clean" value="OK">
+                    <span>Chamber dry, clean, accessible</span>
+                </div>
+                <input type="text" class="remarks" name="Chamber_Remarks" placeholder="Remarks">
+            </div>
+
+            <div class="checklist-item">
+                <div class="check-row">
+                    <input type="checkbox" name="Mechanical_Support" value="OK">
+                    <span>Mechanical support adequate, no pipe stress</span>
+                </div>
+                <input type="text" class="remarks" name="Support_Remarks" placeholder="Remarks">
+            </div>
+
+            <div class="checklist-item">
+                <div class="check-row">
+                    <input type="checkbox" name="Upstream_Downstream" value="OK">
+                    <span>Upstream/downstream OK (no swirl / partial fill)</span>
+                </div>
+                <input type="text" class="remarks" name="Flow_Condition_Remarks" placeholder="Remarks">
+            </div>
+
+            <div class="checklist-item">
+                <div class="check-row">
+                    <input type="checkbox" name="Grounding_Check" value="OK">
+                    <span>Grounding / Earthing verified</span>
+                </div>
+                <input type="text" class="remarks" name="Grounding_Remarks" placeholder="Remarks">
+            </div>
+
+            <div class="checklist-item">
+                <div class="check-row">
+                    <input type="checkbox" name="Cable_Glands" value="OK">
+                    <span>Cable glands tight, IP68 sealed, no damage</span>
+                </div>
+                <input type="text" class="remarks" name="Cable_Remarks" placeholder="Remarks">
+            </div>
+
+            <div class="checklist-item">
+                <div class="check-row">
+                    <input type="checkbox" name="Housing_Check" value="OK">
+                    <span>Display / housing no cracks, no condensation</span>
+                </div>
+                <input type="text" class="remarks" name="Housing_Remarks" placeholder="Remarks">
+            </div>
+
+            <div class="checklist-item critical">
+                <div class="check-row">
+                    <input type="checkbox" name="Water_Ingress_Check" value="OK">
+                    <span><strong>No water ingress into meter housing / converter</strong> (IP68 integrity)</span>
+                </div>
+                <input type="text" class="remarks" name="Water_Ingress_Remarks" placeholder="Evidence of water / corrosion?">
+                <p class="note">Look for: droplets in display window, fogging behind lens, water in terminal compartment, corroded terminals, damp in converter housing, water in sensor junction box.</p>
+            </div>
+        </div>
+
+        <!-- Section 2 -->
+        <div class="form-group">
+            <h2>2. Power & Battery</h2>
+
+            <label>Power Source</label>
+            <select name="Power_Source">
+                <option value="Battery">Battery</option>
+                <option value="Mains">Mains</option>
+                <option value="FlexPower (Solar)">FlexPower (Solar)</option>
+            </select>
+
+            <label>Battery Level (%) or Status</label>
+            <input type="text" name="Battery_Level" placeholder="e.g., 85% or Full">
+
+            <div class="checklist-item">
+                <div class="check-row">
+                    <input type="checkbox" name="External_Power_OK" value="OK">
+                    <span>External power / solar stable (if applicable)</span>
+                </div>
+                <input type="text" class="remarks" name="Power_Remarks" placeholder="Remarks">
+            </div>
+
+            <div class="checklist-item">
+                <div class="check-row">
+                    <input type="checkbox" name="Battery_Safety" value="OK">
+                    <span>No battery leakage or swelling</span>
+                </div>
+                <input type="text" class="remarks" name="Battery_Safety_Remarks" placeholder="Remarks">
+            </div>
+        </div>
+
+        <!-- Section 3 -->
+        <div class="form-group">
+            <h2>3. Measurement & Diagnostics</h2>
+
+            <label>Current Flow Reading</label>
+            <input type="text" name="Flow_Reading" placeholder="e.g., 12.5 m³/h">
+
+            <label>Current Totalizer Value</label>
+            <input type="text" name="Totalizer_Value" placeholder="e.g., 123456 m³">
+
+            <div class="checklist-item">
+                <div class="check-row">
+                    <input type="checkbox" name="Flow_Plausible" value="OK">
+                    <span>Flow reading plausible / stable (no jumping)</span>
+                </div>
+                <input type="text" class="remarks" name="Flow_Plausible_Remarks" placeholder="Remarks">
+            </div>
+
+            <div class="checklist-item">
+                <div class="check-row">
+                    <input type="checkbox" name="Empty_Pipe_OK" value="OK">
+                    <span>No "Empty Pipe" indication (pipe is full)</span>
+                </div>
+                <input type="text" class="remarks" name="Empty_Pipe_Remarks" placeholder="Remarks">
+            </div>
+
+            <div class="checklist-item">
+                <div class="check-row">
+                    <input type="checkbox" name="No_Alerts" value="OK">
+                    <span>No diagnostic alerts / error codes</span>
+                </div>
+                <input type="text" class="remarks" name="Alert_Remarks" placeholder="Remarks">
+            </div>
+
+            <label>Pressure / Temperature (if fitted)</label>
+            <input type="text" name="Pressure_Temp" placeholder="e.g., 3.2 bar / 18°C">
+        </div>
+
+        <!-- Section 4 -->
+        <div class="form-group">
+            <h2>4. Verification & Calibration</h2>
+
+            <label>Last Verification Date</label>
+            <input type="date" name="Last_Verification_Date">
+
+            <div class="checklist-item">
+                <div class="check-row">
+                    <input type="checkbox" name="Zero_Check_OK" value="OK">
+                    <span>Zero check passed (if applicable)</span>
+                </div>
+                <input type="text" class="remarks" name="Zero_Check_Remarks" placeholder="Remarks">
+            </div>
+
+            <div class="checklist-item">
+                <div class="check-row">
+                    <input type="checkbox" name="Seal_Intact" value="OK">
+                    <span>Calibration / verification seals intact</span>
+                </div>
+                <input type="text" class="remarks" name="Seal_Remarks" placeholder="Remarks">
+            </div>
+        </div>
+
+        <!-- Section 5 -->
+        <div class="form-group">
+            <h2>5. Overall Assessment</h2>
+
+            <label>Overall Status <span class="required">*</span></label>
+            <select name="Overall_Status" required>
+                <option value="">-- Select --</option>
+                <option value="Operational">Operational - No action required</option>
+                <option value="Monitor">Operational - Monitor (minor issues)</option>
+                <option value="Maintenance">Requires Maintenance</option>
+                <option value="Faulty">Non-Operational / Faulty</option>
+            </select>
+
+            <label>Required Actions / Follow-up</label>
+            <textarea name="Required_Actions" rows="4" placeholder="Describe follow-up actions..."></textarea>
+
+            <label>Assessor Signature</label>
+            <input type="text" name="Signature" placeholder="Type your name as signature">
+        </div>
+
+        <button type="submit">📤 Submit Assessment</button>
+    </form>
+
+    <p class="note" style="text-align:center; margin-top:16px;">
+        Data goes directly to JMaiasa@waterpng.com.pg
+    </p>
+
+</body>
+</html>
